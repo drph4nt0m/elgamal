@@ -69,27 +69,27 @@
     <form id="form" class="ui form" onsubmit="run()">
       <div class="field">
         <label>alpha</label>
-        <input type="number" id="alpha" name="alpha" placeholder="alpha" value="5" required>
+        <input type="number" id="alpha" name="alpha" placeholder="alpha" value="5" min="1" required>
       </div>
       <div class="field">
         <label>beta</label>
-        <input type="number" id="beta" name="beta" placeholder="beta" value="26379" required>
+        <input type="number" id="beta" name="beta" placeholder="beta" value="26379" min="1" required>
       </div>
       <div class="field">
         <label>p</label>
-        <input type="number" id="p" name="p" placeholder="p" value="31847" required>
+        <input type="number" id="p" name="p" placeholder="p" value="31847" min="1" required>
       </div>
       <div class="field">
         <label>m</label>
-        <input type="number" id="m" name="m" placeholder="m" value="20543" required>
+        <input type="number" id="m" name="m" placeholder="m" value="20543" min="1" required>
       </div>
       <div class="field">
         <label>signature 1</label>
-        <input type="number" id="signature1" name="signature1" placeholder="signature 1" value="20679" required>
+        <input type="number" id="signature1" name="signature1" placeholder="signature 1" value="20679" min="1" required>
       </div>
       <div class="field">
         <label>signature 2</label>
-        <input type="number" id="signature2" name="signature2" placeholder="signature 2" value="11082" required>
+        <input type="number" id="signature2" name="signature2" placeholder="signature 2" value="11082" min="1" required>
       </div>
       <button class="ui button" type="submit">Run</button>
     </form>
