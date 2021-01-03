@@ -203,13 +203,9 @@ form.onsubmit = async (e) => {
   const secretKeyAnswer = document.getElementById("secretKey-answer")
   const kAnswer = document.getElementById("k-answer")
 
-  isSuccessAnswer.innerHTML = `The signature verification <strong>${isSuccess ? 'passed': 'failed'}</strong>!`
-  secretKeyAnswer.innerHTML = `Secret Key is <strong>${secretKey}</strong>.`
-  kAnswer.innerHTML = `The value of k is <strong>${k}</strong>.`
+  isSuccessAnswer.innerHTML = `The signature verification <strong>${isSuccess ? '<span class="green">passed</span>': '<span class="red">failed</span>'}</strong>!`
+  secretKeyAnswer.innerHTML = `Secret Key is <strong class="green">${secretKey}</strong>.`
+  kAnswer.innerHTML = `The value of k is <strong class="green">${k}</strong>.`
 
   result.classList.remove('hide-me')
 }
-
-// run(10, 4, 19, 14, 3, 4)
-
-// run(5, 26379, 31847, 20543, 20679, 11082)
