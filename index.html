@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elgamal</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css" integrity="sha256-UXesixbeLkB/UYxVTzuj/gg3+LMzgwAmg3zD+C4ZASQ=" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js" integrity="sha256-CgSoWC9w5wNmI1aN8dIMK+6DPelUEtvDr+Bc2m/0Nx8=" crossorigin="anonymous"></script>
+  <style>
+    .hide-me {
+      display: none !important;
+    }
+
+    header {
+      padding-top: 2em;
+      padding-bottom: 1em;
+    }
+
+    .container {
+      padding-bottom: 4em;
+    }
+
+    footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100vw;
+      background-color: rgba(0, 0, 0, .9);
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="ui container">
+    <header>
+      <h1>
+        Elgamal
+      </h1>
+    </header>
+    <div class="ui divider"></div>
+
+    <div id="result" class="hide-me">
+      <div class="ui icon message">
+        <i class="calculator icon"></i>
+        <div class="content">
+          <p id="isSuccess-answer"></p>
+          <p id="secretKey-answer"></p>
+          <p id="k-answer"></p>
+        </div>
+      </div>
+      <div class="ui divider"></div>
+    </div>
+
+    <form id="form" class="ui form" onsubmit="run()">
+      <div class="field">
+        <label>alpha</label>
+        <input type="number" id="alpha" name="alpha" placeholder="alpha" value="5" required>
+      </div>
+      <div class="field">
+        <label>beta</label>
+        <input type="number" id="beta" name="beta" placeholder="beta" value="26379" required>
+      </div>
+      <div class="field">
+        <label>p</label>
+        <input type="number" id="p" name="p" placeholder="p" value="31847" required>
+      </div>
+      <div class="field">
+        <label>m</label>
+        <input type="number" id="m" name="m" placeholder="m" value="20543" required>
+      </div>
+      <div class="field">
+        <label>signature 1</label>
+        <input type="number" id="signature1" name="signature1" placeholder="signature 1" value="20679" required>
+      </div>
+      <div class="field">
+        <label>signature 2</label>
+        <input type="number" id="signature2" name="signature2" placeholder="signature 2" value="11082" required>
+      </div>
+      <button class="ui button" type="submit">Run</button>
+    </form>
+  </div>
+
+  <footer>Created by Rahul Singh [CB.EN.P2CYS20027]</footer>
+
+  <script src="./elgamal.js"></script>
+</body>
+</html>
