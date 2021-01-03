@@ -13,7 +13,7 @@
       display: none !important;
     }
 
-    header {
+    main {
       padding-top: 2em;
       padding-bottom: 1em;
     }
@@ -30,7 +30,7 @@
       color: red;
     }
 
-    footer {
+    header {
       width: 100vw;
       background-color: rgba(0, 0, 0, .9);
       color: white;
@@ -38,7 +38,7 @@
       padding: 10px;
     }
 
-    footer a {
+    header a {
       text-decoration: none;
       color: inherit;
     }
@@ -46,12 +46,17 @@
 </head>
 <body>
 
+  <header>
+    <p><a href="https://github.com/drph4nt0m/elgamal" target="_blank"><i class="github icon"></i>GitHub</a></p>
+    <p>Created by Rahul Singh [CB.EN.P2CYS20027]</p>
+  </header>
+
   <div class="ui container">
-    <header>
+    <main>
       <h1>
         Elgamal
       </h1>
-    </header>
+    </main>
     <div class="ui divider"></div>
 
     <div id="result" class="hide-me">
@@ -94,11 +99,6 @@
       <button class="ui button" type="submit">Run</button>
     </form>
   </div>
-
-  <footer>
-    <p><a href="https://github.com/drph4nt0m/elgamal" target="_blank"><i class="github icon"></i>GitHub</a></p>
-    <p>Created by Rahul Singh [CB.EN.P2CYS20027]</p>
-  </footer>
 
   <script src="./elgamal.js"></script>
 </body>
