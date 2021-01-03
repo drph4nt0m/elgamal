@@ -176,7 +176,7 @@ function run(alpha, beta, p, m, signature1, signature2) {
   const isSuccess = verify(alpha, beta, p, m, signature1, signature2)
   console.log(`The signature verification ${isSuccess ? 'passed': 'failed'}!`)
   const secretKey = discreteLogarithm(alpha, beta, p)
-  console.log(`Secret Key is ${secretKey}.`)
+  console.log(`The private Key is ${secretKey}.`)
   const k = calculateK(alpha, beta, p, m, signature1, signature2, secretKey)
   console.log(`The value of k is ${k}.`)
 
@@ -204,7 +204,7 @@ form.onsubmit = async (e) => {
   const kAnswer = document.getElementById("k-answer")
 
   isSuccessAnswer.innerHTML = `The signature verification <strong>${isSuccess ? '<span class="green">passed</span>': '<span class="red">failed</span>'}</strong>!`
-  secretKeyAnswer.innerHTML = `Secret Key is <strong class="green">${secretKey}</strong>.`
+  secretKeyAnswer.innerHTML = `The private Key is <strong class="green">${secretKey}</strong>.`
   kAnswer.innerHTML = `The value of k is <strong class="green">${k}</strong>.`
 
   result.classList.remove('hide-me')
