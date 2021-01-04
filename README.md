@@ -1,4 +1,4 @@
-# Elgamal
+# Elgamal Signature Scheme
 
 This is my assignment submission for Cryptography assignment.
 
